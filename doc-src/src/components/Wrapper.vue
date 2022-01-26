@@ -116,7 +116,7 @@ export default {
       return import(
         /* webpackChunkName: "examples" */
         /* webpackMode: "lazy-once" */
-        `../examples/${this.filename}.vue`
+        '../examples/' + this.filename + '.vue'
       )
         .then(comp => (this.component = comp.default));
     },
@@ -124,7 +124,7 @@ export default {
       return import(
         /* webpackChunkName: "examples-source" */
         /* webpackMode: "lazy-once" */
-        `!raw-loader!../examples/${this.filename}.vue`
+        '!raw-loader!../examples/' + this.filename + '.vue'
       )
         .then(comp => this.boot(comp.default))
         .then(this.unobserve);

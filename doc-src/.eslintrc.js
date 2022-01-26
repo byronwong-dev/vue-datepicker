@@ -48,5 +48,6 @@ module.exports = {
     'padded-blocks': 'off',
     'meteor/audit-argument-checks': 'off',
     'no-multiple-empty-lines': ['error', { max: 1 }],
+    'indent': ['warn', 2, {'ignoredNodes': ['TemplateLiteral']}]
   },
 }
